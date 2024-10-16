@@ -3,7 +3,7 @@
 This repository contains the indoor simulation for part 1 of the project for CS 560 - Autonomous Robotics by Kaleigh Andrzejewski.
 
 The indoor simulation is a model of the first floor of Bruno Library at the University of Alabama. 
-The file can be found under the Resources folder as bruno.wbt and under the webots_ros2_project1_python\worlds\bruno.wbt.
+The file can be found under the webots_ros2_project1_python\worlds\bruno.wbt.
 
 To launch the simulation, follow the steps provided by Dr. Monica Anderson from HW 1 that is included in the README.md under webots_ros2_project1_python.
 

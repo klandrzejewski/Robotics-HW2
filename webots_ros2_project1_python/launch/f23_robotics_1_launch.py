@@ -43,61 +43,61 @@ def generate_launch_description():
         ros2_supervisor=True
     )
 
-    robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        output='screen',
-        parameters=[{
-            'robot_description': '<robot name=""><link name=""/></robot>'
-        }],
-    )
+    # robot_state_publisher = Node(
+    #     package='robot_state_publisher',
+    #     executable='robot_state_publisher',
+    #     output='screen',
+    #     parameters=[{
+    #         'robot_description': '<robot name=""><link name=""/></robot>'
+    #     }],
+    # )
 
-    footprint_publisher = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        output='screen',
-        arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'base_footprint'],
-    )
+    # footprint_publisher = Node(
+    #     package='tf2_ros',
+    #     executable='static_transform_publisher',
+    #     output='screen',
+    # #     arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'base_footprint'],
+    # # )
 
-    # ROS control spawners
-    controller_manager_timeout = ['--controller-manager-timeout', '50']
-    controller_manager_prefix = 'python.exe' if os.name == 'nt' else ''
-    diffdrive_controller_spawner = Node(
-        package='controller_manager',
-        executable='spawner',
-        output='screen',
-        prefix=controller_manager_prefix,
-        arguments=['diffdrive_controller'] + controller_manager_timeout,
-    )
-    joint_state_broadcaster_spawner = Node(
-        package='controller_manager',
-        executable='spawner',
-        output='screen',
-        prefix=controller_manager_prefix,
-        arguments=['joint_state_broadcaster'] + controller_manager_timeout,
-    )
-    ros_control_spawners = [diffdrive_controller_spawner, joint_state_broadcaster_spawner]
+    # # ROS control spawners
+    # controller_manager_timeout = ['--controller-manager-timeout', '50']
+    # controller_manager_prefix = 'python.exe' if os.name == 'nt' else ''
+    # diffdrive_controller_spawner = Node(
+    #     package='controller_manager',
+    #     executable='spawner',
+    #     output='screen',
+    #     prefix=controller_manager_prefix,
+    #     arguments=['diffdrive_controller'] + controller_manager_timeout,
+    # )
+    # joint_state_broadcaster_spawner = Node(
+    #     package='controller_manager',
+    #     executable='spawner',
+    #     output='screen',
+    #     prefix=controller_manager_prefix,
+    #     arguments=['joint_state_broadcaster'] + controller_manager_timeout,
+    # )
+    # ros_control_spawners = [diffdrive_controller_spawner, joint_state_broadcaster_spawner]
 
-    robot_description_path = os.path.join(package_dir, 'resource', 'turtlebot_webots.urdf')
-    ros2_control_params = os.path.join(package_dir, 'resource', 'ros2control.yml')
-    mappings = [('/diffdrive_controller/cmd_vel_unstamped', '/cmd_vel'), ('/diffdrive_controller/odom', '/odom')]
-    turtlebot_driver = WebotsController(
-        robot_name='TurtleBot3Burger',
-        parameters=[
-            {'robot_description': robot_description_path,
-             'use_sim_time': use_sim_time,
-             'set_robot_state_publisher': True},
-            ros2_control_params
-        ],
-        remappings=mappings,
-        respawn=True
-    )
+    # robot_description_path = os.path.join(package_dir, 'resource', 'turtlebot_webots.urdf')
+    # ros2_control_params = os.path.join(package_dir, 'resource', 'ros2control.yml')
+    # mappings = [('/diffdrive_controller/cmd_vel_unstamped', '/cmd_vel'), ('/diffdrive_controller/odom', '/odom')]
+    # turtlebot_driver = WebotsController(
+    #     robot_name='TurtleBot3Burger',
+    #     parameters=[
+    #         {'robot_description': robot_description_path,
+    #          'use_sim_time': use_sim_time,
+    #          'set_robot_state_publisher': True},
+    #         ros2_control_params
+    #     ],
+    #     remappings=mappings,
+    #     respawn=True
+    # )
 
     # Wait for the simulation to be ready to start controllers
-    waiting_nodes = WaitForControllerConnection(
-        target_driver=turtlebot_driver,
-        nodes_to_start= ros_control_spawners
-    )
+    # waiting_nodes = WaitForControllerConnection(
+    #     target_driver=turtlebot_driver,
+    #     nodes_to_start= ros_control_spawners
+    # )
 
 
 
@@ -114,12 +114,12 @@ def generate_launch_description():
         ),
         webots,
         webots._supervisor,
-        waiting_nodes,
+        # waiting_nodes,
 
-        robot_state_publisher,
-        footprint_publisher,
+        # robot_state_publisher,
+        # footprint_publisher,
 
-        turtlebot_driver,
+        # turtlebot_driver,
 
         # This action will kill all nodes once the Webots simulation has exited
         launch.actions.RegisterEventHandler(
