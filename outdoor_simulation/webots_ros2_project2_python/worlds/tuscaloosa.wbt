@@ -109,8 +109,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.2640841033442894 0.7314876898854424 0.6286376904918298 1.0614409705564274
-  position 32.01042949952927 -816.9357711695976 56.136133305203316
+  orientation 0.5116006681171796 0.5553445400078542 -0.6556349580868308 1.8946144174209105
+  position 393.2159903535991 34.92347238458946 1003.7175741383903
   near 3
 }
 TexturedBackground {
@@ -473,7 +473,7 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
   startRoadsLine [
@@ -499,7 +499,7 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
   startRoadsLine [
@@ -1778,7 +1778,7 @@ SolidBox {
   size 139 0.9 0.15
   appearance Pavement {
     textureTransform TextureTransform {
-      scale 300 300
+      scale 200 200
     }
   }
 }
@@ -1822,7 +1822,7 @@ SolidBox {
   size 86 0.9 0.15
   appearance Pavement {
     textureTransform TextureTransform {
-      scale 300 300
+      scale 100 100
     }
   }
 }
@@ -1877,7 +1877,7 @@ SolidBox {
   size 100 0.9 0.15
   appearance Pavement {
     textureTransform TextureTransform {
-      scale 300 300
+      scale 100 100
     }
   }
 }
@@ -1899,7 +1899,7 @@ SolidBox {
   size 100 0.9 0.15
   appearance Pavement {
     textureTransform TextureTransform {
-      scale 300 300
+      scale 100 100
     }
   }
 }
@@ -1943,7 +1943,7 @@ SolidBox {
   size 78 0.9 0.15
   appearance Pavement {
     textureTransform TextureTransform {
-      scale 300 300
+      scale 100 100
     }
   }
 }
@@ -2037,7 +2037,7 @@ SolidBox {
   size 106 0.9 0.15
   appearance Pavement {
     textureTransform TextureTransform {
-      scale 300 300
+      scale 100 100
     }
   }
 }
@@ -2455,7 +2455,7 @@ SolidBox {
   size 50 0.9 0.15
   appearance Pavement {
     textureTransform TextureTransform {
-      scale 300 300
+      scale 50 50
     }
   }
 }
@@ -2520,7 +2520,7 @@ Roundabout {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
 }
@@ -3918,7 +3918,7 @@ Road {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
   ]
 }
 Road {
@@ -4041,7 +4041,7 @@ Road {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
   ]
 }
 Road {
@@ -4069,7 +4069,7 @@ Road {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
   ]
 }
 Road {
@@ -4095,7 +4095,7 @@ Road {
   ]
   endLine [
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
   ]
 }
 Road {
@@ -4148,7 +4148,7 @@ Road {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
   ]
 }
 Road {
@@ -4180,7 +4180,7 @@ Road {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
   ]
 }
 Road {
@@ -4210,7 +4210,7 @@ Road {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
   ]
 }
 Road {
@@ -4238,7 +4238,7 @@ Road {
   ]
   endLine [
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
   ]
 }
 Road {
@@ -4312,7 +4312,7 @@ Road {
   ]
   endLine [
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
   ]
 }
 Road {
@@ -4764,10 +4764,10 @@ Road {
     1 0 0
   ]
   startLine [
-    "textures/road_line_dashed.png"
-    "textures/road_line_dashed.png"
-    "textures/road_line_dashed.png"
-    "textures/road_line_triangle.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_triangles.png"
   ]
   endLine [
     "textures/road_line_dashed.png"
@@ -4810,7 +4810,7 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
   startRoadsLine [
@@ -4837,7 +4837,7 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
   startRoadsLine [
@@ -4865,7 +4865,7 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
   startRoadsLine [
@@ -4892,7 +4892,7 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
   startRoadsLine [
@@ -4919,7 +4919,7 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
   startRoadsLine [
@@ -4946,7 +4946,7 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
   startRoadsLine [
@@ -4974,7 +4974,7 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
   startRoadsLine [
@@ -5001,7 +5001,7 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
   startRoadsLine [
@@ -5028,7 +5028,7 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
   startRoadsLine [
@@ -5045,6 +5045,7 @@ RoadIntersection {
   rotation 0 0 1 -0.7853996938995746
   name "road intersection(9)"
   connectedRoadIDs [
+    "18"
     "8"
     "3"
     "2"
@@ -5055,48 +5056,9 @@ RoadIntersection {
     ""
     ""
     ""
-    "textures/road_line_dashed.png"
+    "https://github.com/cyberbotics/webots/blob/master/projects/objects/road/protos/textures/road_line_dashed.png"
     "textures/road_line_triangle.png"
   ]
-  startRoadsLine [
-    RoadLine {
-    }
-    RoadLine {
-      color 0.85 0.75 0.3
-      type "continuous"
-    }
-  ]
-}
-RoadIntersection {
-  translation 50 0 0
-  rotation 0 0 1 -0.7853996938995746
-  name "road intersection(5)"
-  connectedRoadIDs [
-    "3"
-    "2"
-  ]
-  roadsWidth 21.5
-  startRoadsNumberOfLanes 4
-  startRoadsLine [
-    RoadLine {
-    }
-    RoadLine {
-      color 0.85 0.75 0.3
-      type "continuous"
-    }
-  ]
-}
-RoadIntersection {
-  translation 50 0 0
-  rotation 0 0 1 -0.7853996938995746
-  name "road intersection(6)"
-  connectedRoadIDs [
-    "18"
-    "2"
-    "1"
-  ]
-  roadsWidth 21.5
-  startRoadsNumberOfLanes 4
   startRoadsLine [
     RoadLine {
     }

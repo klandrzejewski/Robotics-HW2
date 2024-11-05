@@ -27,3 +27,5 @@ For "GenericTrafficLight", the following attributes will modify the controls:
 3. redTime (How many seconds light should be red, default is 15)
 
 For "CrossRoadsTrafficLight", to modify the controls, you would select "edit" under the "controller" attribute. In the text editor in Webots, the controller will open for you to modify. If you wish to change the light times, change the value listed after "t" in the if statements. The if statements are properly commented so you will know what you are changing.
+
+*Note: More detail (e.g. foliage, benches, trash cans) was planned to be added but due to the already existing complexity of the world, it was left out as the simulation already takes a long time to load.
