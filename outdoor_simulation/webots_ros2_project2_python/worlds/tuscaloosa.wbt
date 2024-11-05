@@ -109,8 +109,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.11254434661673166 0.87685951316932 0.4673875952665798 0.5777589271545104
-  position 18.0918547199578 -844.4254364602871 36.175011160394924
+  orientation -0.2640841033442894 0.7314876898854424 0.6286376904918298 1.0614409705564274
+  position 32.01042949952927 -816.9357711695976 56.136133305203316
   near 3
 }
 TexturedBackground {
@@ -510,55 +510,6 @@ RoadIntersection {
       type "continuous"
     }
   ]
-}
-DEF FLOWERS Solid {
-  translation 75.0931 -679.732 0
-  rotation 0 0 1 0.25
-  children [
-    Fence {
-      height 0.2
-      poleGap 0.09
-      poleRadius 0.05
-      poleAppearance RoughPine {
-      }
-      path [
-        0 0 0
-        0 -10 0
-        -2 -10 0
-        -2 0 0
-        0 0 0
-      ]
-      horizontalBarsNumber 0
-    }
-    Shape {
-      appearance PBRAppearance {
-        baseColorMap ImageTexture {
-          url [
-            "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/vehicles/worlds/textures/flowers_purple.jpg"
-          ]
-        }
-        roughness 1
-        metalness 0
-        textureTransform TextureTransform {
-          scale 10 5
-        }
-      }
-      geometry IndexedFaceSet {
-        coord Coordinate {
-          point [
-            -2 0 0
-            -2 -10 0
-            0 -10 0
-            0 0 0
-          ]
-        }
-        coordIndex [
-          0, 1, 2, 3, -1
-        ]
-      }
-    }
-  ]
-  name "solid(1)"
 }
 GenericTrafficLight {
   translation 38.8114 -508.15 0
