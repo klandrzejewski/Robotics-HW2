@@ -4,7 +4,7 @@ This folder contains the indoor simulation for part 2 of the project for CS 560 
 
 The outdoor simulation is a model of a .5 square mile of Tuscaloosa at the University of Alabama. An image of this area can be found as tuscaloosaGoogleEarth.jpg and below.
 
-![Google Earth of Area](relative%20tuscaloosaGoogleEarth.jpg?raw=true "Map")
+![tuscaloosaGoogleEarth](https://github.com/user-attachments/assets/3a82834e-e651-4540-8237-011cfd552e39)
 
 The file can be found under the webots_ros2_project2_python\worlds\tuscaloosa.wbt.
 
